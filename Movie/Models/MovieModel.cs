@@ -23,5 +23,7 @@ namespace Movie.Models
 
         [Range(1, 5)]
         public float Rating { get; set; }
+
+
     }
 }
