@@ -33,7 +33,8 @@
                 </td>
                 <td>
                     @*@await Component.InvokeAsync("Star", new { movieId = item.Id })*@
-                    <vc:star movie-id="@item.Id"></vc:star>
+                    @*<vc:star movie-id="@item.Id"></vc:star>*@
+                    <star rating="@item.Rating"></star>
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
